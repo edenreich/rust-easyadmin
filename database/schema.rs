@@ -1,14 +1,4 @@
 table! {
-    user_sessions (id) {
-        id -> Integer,
-        user_id -> Integer,
-        token -> Varchar,
-        updated_at -> Timestamp,
-        created_at -> Timestamp,
-    }
-}
-
-table! {
     users (id) {
         id -> Integer,
         name -> Varchar,
@@ -18,9 +8,19 @@ table! {
     }
 }
 
+table! {
+    user_sessions (id) {
+        id -> Integer,
+        user_id -> Integer,
+        token -> Varchar,
+        updated_at -> Timestamp,
+        created_at -> Timestamp,
+    }
+}
+
 joinable!(user_sessions -> users (user_id));
 
 allow_tables_to_appear_in_same_query!(
-    user_sessions,
     users,
+    user_sessions,
 );
