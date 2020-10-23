@@ -1,5 +1,5 @@
 [package]
-name = "easyadmin-skeleton"
+name = "easyadmin-app"
 version = "0.1.0"
 authors = ["Default Name <email>"]
 description = "A skeleton for easyadmin app written in rust."
@@ -7,7 +7,7 @@ edition = "2018"
 license = "MIT"
 
 [dependencies]
-easyadmin = { version = "0.1.0", path = "../rust-easyadmin-framework/lib" }
+easyadmin = { version = "0.1.0", path = "lib" }
 rocket = "0.4.5"
 rocket_contrib = "0.4.5"
 diesel = { version = "1.4.5", features = ["mysql", "chrono"] }
@@ -15,5 +15,5 @@ r2d2-diesel = "1.0"
 r2d2 = "0.8"
 
 [[bin]]
-name = "easyadmin-skeleton"
+name = "easyadmin-app"
 path = "bootstrap.rs"
