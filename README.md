@@ -9,7 +9,7 @@ There is not yet a public crate published, so for development just copy the lib 
 ## Deploy
 Package the application as a container by running:
 ```
-docker build -t easyadmin .
+docker build -t easyadmin --target production .
 ```
 
-When running `docker images | grep easyadmin` you should see your containerized admin application with a size of approx 13.4MB, deploy it anywhere you want :)
+When running `docker images | grep easyadmin` you should see your containerized admin application.
