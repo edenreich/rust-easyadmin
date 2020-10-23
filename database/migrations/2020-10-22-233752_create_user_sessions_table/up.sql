@@ -1,0 +1,8 @@
+CREATE TABLE user_sessions (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    user_id INT(11) NOT NULL,
+    token VARCHAR(250) NOT NULL,
+    updated_at TIMESTAMP NOT NULL DEFAULT NOW() ON UPDATE NOW(),
+    created_at TIMESTAMP NOT NULL,
+    FOREIGN KEY(user_id) REFERENCES users(id)
+) ENGINE=InnoDB CHARACTER SET=utf8;
