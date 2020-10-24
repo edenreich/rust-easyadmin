@@ -1,5 +1,5 @@
 [package]
-name = "easyadmin-app"
+name = "easyadmin_app"
 version = "0.1.0"
 authors = ["Default Name <email>"]
 description = "A skeleton for easyadmin app written in rust."
@@ -8,6 +8,7 @@ license = "MIT"
 
 [dependencies]
 easyadmin = { version = "0.1.0", path = "lib" }
+easyadmin_cli = { version = "0.1.0", path = "cli" }
 rocket = "0.4.5"
 rocket_contrib = "0.4.5"
 diesel = { version = "1.4.5", features = ["mysql", "chrono"] }
