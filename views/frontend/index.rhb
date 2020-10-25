@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyAdmin</title>
+    <title>Easyadmin</title>
     <style>
         html {
             line-height: 1.15;
@@ -9827,7 +9827,7 @@
         <header class="mt3 mb6 w-100 mw-none ph3 mw8-m mw9-l center">
             <div class="flex flex-column flex-row-l">
                 <div class="w-70-l mw8-l">
-                    <h1>Rust - EasyAdmin Frontend Welcome Page</h1>
+                    <h1>Rust - Easyadmin Frontend Welcome Page</h1>
                     <h2 class="mt4 mb0 f2 f1-ns">
                         An admin panel made easy written in rust.
                     </h2>
@@ -9843,7 +9843,7 @@
             <div class="w-100 mw-none ph3 mw8-m mw9-l center f3">
                 <header class="pb0">
                     <h2>
-                        Why Rust EasyAdmin?
+                        Why Rust Easyadmin?
                     </h2>
                     <div class="highlight"></div>
                 </header>
