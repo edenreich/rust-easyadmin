@@ -1,4 +1,4 @@
-use easyadmin::thirdparty::{rocket, rocket::response::Redirect, rocket::get};
+use easyadmin::thirdparty::rocket::{self, response::Redirect, get};
 use easyadmin::view::AdminView;
 use std::collections::HashMap;
 

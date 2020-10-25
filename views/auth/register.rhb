@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyAdmin</title>
+    <title>Rust EasyAdmin</title>
     <style>
         html {
             line-height: 1.15;
@@ -9810,7 +9810,7 @@
     <nav class="flex flex-row justify-center justify-end-l items-center flex-wrap ph2 pl3-ns pr3-ns pb3">
         <div class="brand flex-auto w-100 w-auto-l self-start tc tl-l">
             <a href="/" class="brand">
-                <img class="v-mid ml0-l" alt="Rust Logo" src="/img/rust-logo.svg">
+                <img class="v-mid ml0-l" alt="Rust Logo" src="/shared/img/rust-logo.svg">
             </a>
         </div>
         <ul
