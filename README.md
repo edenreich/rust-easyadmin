@@ -26,4 +26,4 @@ docker run -d \
     easyadmin
 ```
 
-Note: replace XXX with your own configurations.
+Note: replace DATABASE_URL with your own configurations.
