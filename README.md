@@ -21,7 +21,7 @@ When running `docker images | grep easyadmin` you should see your containerized 
 To run this application use the following:
 ```
 docker run -d \
-    -e DATABASE_URL='mysql://root:secret@mysql:3306/easyadmin' \
+    -e DATABASE_URL=mysql://root:secret@mysql:3306/easyadmin \
     -e ROCKET_SECRET_KEY=$(openssl rand -base64 32) \
     easyadmin
 ```
