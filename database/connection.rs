@@ -1,4 +1,5 @@
-use easyadmin::thirdparty::{r2d2_diesel::ConnectionManager, diesel::MysqlConnection};
+use easyadmin::thirdparty::{r2d2_diesel::ConnectionManager};
+use diesel::MysqlConnection;
 
 type Pool = easyadmin::thirdparty::r2d2::Pool<ConnectionManager<MysqlConnection>>;
 pub fn init_pool() -> Pool {

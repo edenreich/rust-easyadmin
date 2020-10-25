@@ -1,4 +1,4 @@
-use easyadmin::thirdparty::diesel::{Queryable, sql_types::Datetime};
+use diesel::{Queryable, sql_types::Datetime};
 
 #[derive(Queryable)]
 pub struct UserSession {
