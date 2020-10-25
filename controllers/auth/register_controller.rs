@@ -1,4 +1,4 @@
-extern crate easyadmin;
+use easyadmin::thirdparty::rocket::{self, get, post};
 use easyadmin::view::AuthView;
 use std::collections::HashMap;
 

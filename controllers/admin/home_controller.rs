@@ -1,7 +1,6 @@
-extern crate easyadmin;
+use easyadmin::thirdparty::{rocket, rocket::response::Redirect, rocket::get};
 use easyadmin::view::AdminView;
 use std::collections::HashMap;
-use rocket::response::Redirect;
 
 #[get("/")]
 pub fn index() -> Redirect {

@@ -1,20 +1,15 @@
 #![feature(proc_macro_hygiene, decl_macro)]
-#[macro_use]
-extern crate rocket;
-#[macro_use]
-extern crate diesel;
-extern crate easyadmin;
-extern crate r2d2;
-extern crate r2d2_diesel;
 
+extern crate easyadmin;
+
+mod models;
 mod controllers;
 mod database;
-mod models;
+
+use easyadmin::thirdparty::{rocket, rocket::routes, rocket::Rocket, rocket_contrib::serve::StaticFiles};
 
 use controllers::{admin, auth, frontend};
 use database::connection;
-use rocket::Rocket;
-use rocket_contrib::serve::StaticFiles;
 
 fn main() {
     Rocket::ignite()

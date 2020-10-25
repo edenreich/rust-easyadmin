@@ -400,9 +400,13 @@ dependencies = [
 name = "easyadmin"
 version = "0.1.0"
 dependencies = [
+ "diesel",
  "handlebars",
  "log 0.4.11",
+ "r2d2",
+ "r2d2-diesel",
  "rocket",
+ "rocket_contrib",
  "serde",
  "serde_json",
 ]
@@ -411,13 +415,8 @@ dependencies = [
 name = "easyadmin_app"
 version = "0.1.0"
 dependencies = [
- "diesel",
  "easyadmin",
  "easyadmin_cli",
- "r2d2",
- "r2d2-diesel",
- "rocket",
- "rocket_contrib",
 ]
 
 [[package]]
@@ -659,11 +658,11 @@ dependencies = [
 
 [[package]]
 name = "instant"
-version = "0.1.7"
+version = "0.1.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "63312a18f7ea8760cdd0a7c5aac1a619752a246b833545e3e36d1f81f7cd9e66"
+checksum = "cb1fc4429a33e1f80d41dc9fea4d108a88bec1de8053878898ae448a0b52f613"
 dependencies = [
- "cfg-if 0.1.10",
+ "cfg-if 1.0.0",
 ]
 
 [[package]]

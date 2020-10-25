@@ -1,4 +1,5 @@
-use easyadmin::view::FrontendView;
+use easyadmin::thirdparty::rocket::{self, get};
+use easyadmin::{view::FrontendView};
 use std::collections::HashMap;
 
 #[get("/", format = "text/html")]
