@@ -9,7 +9,7 @@ license = "MIT"
 [dependencies]
 easyadmin = { version = "0.1.0", path = "lib" }
 easyadmin_cli = { version = "0.1.0", path = "cli" }
-diesel = { version = "1.4.5", features = ["mysql", "chrono"] }
+diesel = { version = "1.4.5", features = [ "mysql", "chrono" ] }
 
 [[bin]]
 name = "easyadmin-app"
