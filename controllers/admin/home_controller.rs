@@ -9,6 +9,8 @@ pub fn index() -> Redirect {
 
 #[get("/", format = "text/html")]
 pub fn dashboard() -> Option<AdminView> {
+    // @todos
+    // - add authentication guard
     let mut data: HashMap<&str, &str> = HashMap::new();
     data.insert("version", "0.1.0");
     let mut view: AdminView = AdminView::new("dashboard");

@@ -13,7 +13,10 @@ pub fn form() -> Option<AuthView> {
 
 #[post("/login")]
 pub fn submit() -> Redirect {
-    // @todo check the user's credentials, if it's valid redirect to dashboard,
-    // otherwise stay on the same page and display errors.
+    // @todos
+    // - check the user credentials
+    // - if exists / valid, send session cookie with the client session id
+    // - if not exists / not valid, send error validation to the client 
+    // - redirect the user to the dashboard
     Redirect::to("/auth/login")
 }

@@ -1,4 +1,4 @@
-use easyadmin::thirdparty::rocket::{self, get, post};
+use easyadmin::thirdparty::rocket::{self, response::Redirect, get, post};
 use easyadmin::view::AuthView;
 use std::collections::HashMap;
 
@@ -11,14 +11,12 @@ pub fn form() -> Option<AuthView> {
     Some(view)
 }
 
-#[post("/register", format = "text/html")]
-pub fn submit() -> Option<AuthView> {
-    let mut data: HashMap<&str, &str> = HashMap::new();
-    data.insert("version", "0.1.0");
-
-    // @todo check the user's credentials, if it's valid redirect to dashboard,
-    // otherwise stay on the same page and display errors.
-    let mut view: AuthView = AuthView::new("register");
-    view.set(data);
-    Some(view)
+#[post("/register")]
+pub fn submit() -> Redirect {
+    // @todos
+    // - create a new account and persist to the database
+    // - send session cookie with the client session id
+    // - redirect the user to the dashboard
+    Redirect::to("/admin/dashboard")
 }
+

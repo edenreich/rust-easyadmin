@@ -13,7 +13,9 @@ pub fn form() -> Option<AuthView> {
 
 #[post("/forgot-password")]
 pub fn submit() -> Redirect {
-    // @todo check the user's credentials, if it's valid redirect to dashboard,
-    // otherwise stay on the same page and display errors.
+    // @todos
+    // - check if the user exists by given email
+    // - if exists, send that user an email to reset their password
+    // - redirect to the same page with a flash message
     Redirect::to("/auth/forgot-password")
 }
