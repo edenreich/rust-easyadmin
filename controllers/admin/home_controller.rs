@@ -4,7 +4,7 @@ use std::collections::HashMap;
 
 #[get("/")]
 pub fn index() -> Redirect {
-    Redirect::to("/dashboard")
+    Redirect::to("/admin/dashboard")
 }
 
 #[get("/", format = "text/html")]

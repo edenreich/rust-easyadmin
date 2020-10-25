@@ -15,7 +15,7 @@ fn main() {
     Rocket::ignite()
         .manage(connection::init_pool())
         .mount("/admin", routes![admin::home_controller::index])
-        .mount("/dashboard", routes![admin::home_controller::dashboard])
+        .mount("/admin/dashboard", routes![admin::home_controller::dashboard])
         .mount(
             "/auth",
             routes![
