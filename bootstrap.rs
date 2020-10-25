@@ -22,7 +22,9 @@ fn main() {
                 auth::login_controller::form,
                 auth::login_controller::submit,
                 auth::register_controller::form,
-                auth::register_controller::submit
+                auth::register_controller::submit,
+                auth::forgot_password_controller::form,
+                auth::forgot_password_controller::submit,
             ],
         )
         .mount("/", routes![frontend::home_controller::index])
